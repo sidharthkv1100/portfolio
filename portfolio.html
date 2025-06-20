@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Import Google Font - Inter for a clean look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #EBB866; 
+            color: #333; /* Dark text */
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header, nav, footer {
+            background-color: #0f6b8a;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            
+        }
+
+        section {
+            background-color: white;
+            margin-top: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #d8e2ed;
+            margin-bottom: 15px;
+            font-family:Brush Script MT;
+           } 
+           h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        h3 { font-size: 1.5em; }
+
+            .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #555;
+        }
+        .social-links a:hover {
+            color: #007bff; /* A simple hover effect */
+        }
+
+        .skill-item, .project-card, .experience-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="text-white text-4xl font-bold">Welcome</h1>
+        </div>
+    </header>
+
+    <nav class="bg-gray-800 text-white py-3">
+        <div class="container flex justify-center space-x-6">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#resume">Resume</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Home Section -->
+        <section id="home" class="text-center">
+          
+            <h2 class="text-3xl font-semibold mb-4">Hello, I'm Sidharth K V!</h2>
+            <p class="text-gray-700 text-lg mb-6">
+                I'm a B.Tech student passionate about web development Coding, IoT & Embedded Systems.
+            </p>
+            <div class="social-links flex justify-center space-x-6">
+                <a href="https://github.com/sidharthkv1100" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <i data-lucide="github" class="w-7 h-7"></i>
+                </a>
+                <a href="https://linkedin.com/in/sidharthkv1100/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i data-lucide="linkedin" class="w-7 h-7"></i>
+                </a>
+                <a href="mailto:sidharthvinod1100@gmail.com" aria-label="Email Me">
+                    <i data-lucide="mail" class="w-7 h-7"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="text-2xl font-semibold">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <div class="skill-item">
+                    
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-item">
+                   <p>C, Python</p>
+                </div>
+                <div class="skill-item">
+                 <p>Canva, Adobe</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <h2 class="text-2xl font-semibold">My Resume</h2>
+            <p class="text-gray-700 mb-4">
+                A brief overview of my experience:
+            </p>
+            <div class="experience-item">
+                <h3 class="text-xl font-medium text-blue-700"> B.Tech</h3>
+                <p class="text-gray-800">Currently Pursuing B.Tech In Electronics & Communication Engineering @SNGCE EKM</p>
+                <ul class="list-disc list-inside text-gray-600 mt-2">
+                    <li>Member @ IEEE SPS SNGCE.</li>
+                    <li>Member @ MuLearnSNG.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3 class="text-xl font-medium text-blue-700">Plus Two</h3>
+                <p class="text-gray-800">ST PAUL'S HSS VELIYANAD 2022-2024</p>
+                <ul class="list-disc list-inside text-gray-600 mt-2">
+                    <li>NSS VOLUNTEER</li>
+                    
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-sm">
+            <p>&copy; <span id="current-year"></span> Sidharth KV. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Get the current year for the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
