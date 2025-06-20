@@ -1,0 +1,89 @@
+/* Import Google Font - Inter for a clean look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #EBB866; 
+    color: #333; /* Dark text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, nav, footer {
+    background-color: #0f6b8a;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+section {
+    background-color: white;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #d8e2ed;
+    margin-bottom: 15px;
+    font-family:Brush Script MT;
+} 
+
+h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+h3 { font-size: 1.5em; }
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #555;
+}
+.social-links a:hover {
+    color: #007bff; /* A simple hover effect */
+}
+
+.skill-item, .project-card, .experience-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
